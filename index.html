@@ -1,14 +1,48 @@
 
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>秀優株式会社 showU, Inc.</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<header class="hero-section">
+  <div class="overlay">
+    <h1 class="hero-title">秀優株式会社</h1>
+    <p class="hero-subtitle">跨越世代的感動體驗・京都出發</p>
+  </div>
+</header>
+
+<style>
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('images/kyoto-river.jpg'); /* 照片路徑 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* 黑色遮罩可調整透明度 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+}
+</style>
 <body>
   <div class="main-content">
     <h1>歡迎來到秀優株式会社</h1>
