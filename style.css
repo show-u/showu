@@ -50,3 +50,27 @@ footer {
     font-size: 0.9em;
     color: #666;
 }
+body {
+  background-image: url('images/bg.jpg'); /* 根據你的圖片路徑調整 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* 白色柔光遮罩，維持典雅感 */
+  z-index: -1;
+}
+.main-content {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
