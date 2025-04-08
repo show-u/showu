@@ -1,72 +1,75 @@
-/* 全局樣式 */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  color: #333;
-  background-color: #fdfdfb;
-  background-image: url('images/kyoto-river.jpg'); /* 背景圖片路徑 */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfb;
+    color: #333;
+}
+
+header.hero {
+    background-color: #f0eae0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-grid img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+body {
+  background-image: url('images/bg.jpg'); /* 根據你的圖片路徑調整 */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/* 英雄區塊樣式 */
-header.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-header.hero::before {
+body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
-  z-index: 0;
+  background: rgba(255, 255, 255, 0.6); /* 白色柔光遮罩，維持典雅感 */
+  z-index: -1;
 }
-
-header.hero .hero-content {
-  position: relative;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
-  padding: 20px 40px;
-  border-radius: 10px;
-}
-
-header.hero h1 {
-  font-size: 3.9rem; /* 原字體大小的130% */
-  margin: 0 0 10px 0;
-}
-
-header.hero p {
-  font-size: 1.95rem; /* 原字體大小的130% */
-  margin: 0;
-}
-
-/* 主要內容區塊 */
 .main-content {
-  background-color: rgba(255, 255, 255, 0.85); /* 半透明白底 */
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 40px auto;
-}
-
-/* 響應式設計：在較小的螢幕上調整字體大小 */
-@media (max-width: 768px) {
-  header.hero h1 {
-    font-size: 3rem;
-  }
-  header.hero p {
-    font-size: 1.5rem;
-  }
 }
