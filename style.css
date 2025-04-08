@@ -54,7 +54,7 @@ body {
   background-image: url('images/bg.jpg'); /* 根據你的圖片路徑調整 */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('images/kyoto-river.jpg');
   background-attachment: fixed;
 }
 
