@@ -58,7 +58,15 @@ body {
   background-attachment: fixed;
 }
 
-body::before {
+body {
+  background-attachment: fixed;
+}
+
+.main-content {
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明白底 */
+  padding: 2rem;
+  border-radius: 12px;
+}body::before {
   content: '';
   position: fixed;
   top: 0;
