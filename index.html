@@ -1,116 +1,89 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>秀優株式会社</title>
-  <style>
-    /* 全局樣式 */
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+<header class="hero-section">
+  <div class="overlay">
+    <h1 class="hero-title">秀優株式会社</h1>
+    <p class="hero-subtitle">跨越世代的感動體驗・京都出發</p>
+  </div>
+</header>
 
-    /* 英雄區塊樣式 */
-    .hero-section {
-      position: relative;
-      height: 100vh;
-      background-image: url('images/kyoto-river.jpg'); /* 背景圖片路徑 */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
+<style>
+.hero-section {
+  position: relative;
+  height: 30vh;
+  background-image: url(/kyoto-river.jpg'); /* 照片路徑 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    /* 文字容器，帶有半透明灰色背景 */
-    .hero-content {
-      background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
-      padding: 20px 40px;
-      border-radius: 10px;
-    }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* 黑色遮罩可調整透明度 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
-    /* 主標題樣式 */
-    .hero-title {
-      font-size: 3.9rem; /* 原字體大小的130% */
-      margin: 0 0 10px 0;
-    }
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-    /* 副標題樣式 */
-    .hero-subtitle {
-      font-size: 1.95rem; /* 原字體大小的130% */
-      margin: 0;
-    }
-
-    /* 響應式設計：在較小的螢幕上調整字體大小 */
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 3rem;
-      }
-      .hero-subtitle {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
-</head>
+.hero-subtitle {
+  font-size: 1.5rem;
+}
+</style>
 <body>
-
-  <!-- 英雄區塊 -->
-  <header class="hero-section">
-    <div class="hero-content">
-      <h1 class="hero-title">秀優株式会社</h1>
-      <p class="hero-subtitle">跨越世代的感動體驗・從京都出發</p>
-    </div>
-  </header>
-
-  <!-- 主要內容 -->
-  <main>
-    <section>
-      <h2>歡迎來到秀優株式会社</h2>
-      <p>探索典雅和風的文化體驗與遊學旅程。</p>
+  <div class="main-content">
+    <h1>歡迎來到秀優株式会社</h1>
+    <p>探索典雅和風的文化體驗與遊學旅程。</p>
+  </div>
+</body>
+</html>
+    <section class="intro">
+        <h2>公司簡介</h2>
+        <p>成立於 2025 年，總部設於京都市山科區。秀優株式会社致力於推動文化交流、教育體驗與生活美學，擁抱陽光、向上、溫暖連結的品牌理念。</p>
     </section>
 
-    <section>
-      <h2>公司簡介</h2>
-      <p>成立於 2025 年，總部設於京都市山科區。秀優株式会社致力於推動文化交流、教育體驗與生活美學，擁抱陽光、向上、溫暖連結的品牌理念。</p>
+    <section class="services">
+        <h2>業務範疇</h2>
+        <ul>
+            <li><strong>青少年學習營：</strong> 寒暑假跨文化學習營</li>
+            <li><strong>熟齡再成長體驗：</strong> 文化深度遊學、生活體驗</li>
+            <li><strong>美妝商品企劃與貿易：</strong> 選物設計、日台橋接</li>
+            <li><strong>中小型貿易業務：</strong> 日本在地商品</li>
+        </ul>
     </section>
 
-    <section>
-      <h2>業務範疇</h2>
-      <ul>
-        <li>青少年學習營：寒暑假跨文化學習營</li>
-        <li>熟齡再成長體驗：文化深度遊學、生活體驗</li>
-        <li>美妝商品企劃與貿易：選物設計、日台橋接</li>
-        <li>中小型貿易業務：日本在地商品</li>
-      </ul>
+    <section class="gallery">
+        <h2>活動花絮</h2>
+        <div class="image-grid">
+            <a href="experience/tea.html">煎茶道師範課程</a>
+            <a href="experience/sakura.html">賞櫻活動</a>
+            <a href="experience/temple.html">古寺神社見學</a>
+            <a href="experience/cooking.html">古民家修繕體驗</a>
+        </div>
     </section>
 
-    <section>
-      <h2>活動花絮</h2>
-      <ul>
-        <li>煎茶道師範課程</li>
-        <li>賞櫻活動</li>
-        <li>古寺神社見學</li>
-        <li>古民家修繕體驗</li>
-      </ul>
+    <section class="contact">
+        <h2>聯絡我們</h2>
+        <p>電話：050-3154-0678</p>
+        <p>傳真：050-3091-0808</p>
+        <p>地址：〒607-8080 京都府京都市山科区竹鼻竹ノ街道町39番地1 リベロ上田206号</p>
+        <p>Email：<a href="mailto:showuinjapan@gmail.com">showuinjapan@gmail.com</a></p>
     </section>
 
-    <section>
-      <h2>聯絡我們</h2>
-      <p>電話：050-3154-0678</p>
-      <p>傳真：050-3091-0808</p>
-      <p>地址：〒607-8080 京都府京都市山科区竹鼻竹ノ街道町39番地1 リベロ上田206号</p>
-      <p>Email：showuinjapan@gmail.com</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 秀優株式会社 showU, Inc. 保留所有權利。</p>
-  </footer>
-
+    <footer>
+        <p>&copy; 2025 秀優株式会社 showU, Inc. 保留所有權利。</p>
+    </footer>
 </body>
 </html>
